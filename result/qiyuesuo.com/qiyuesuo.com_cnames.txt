@@ -1,0 +1,5 @@
+dl.qiyuesuo.com    dl.qiyuesuo.com.w.kunlungr.com.
+smtp.qiyuesuo.com    smtp.mxhichina.com.
+pop3.qiyuesuo.com    pop3.mxhichina.com.
+mail.qiyuesuo.com    mail.mxhichina.com.
+cdn.qiyuesuo.com    cdn.qiyuesuo.com.w.kunlunca.com.

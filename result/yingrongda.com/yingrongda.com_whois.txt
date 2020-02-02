@@ -1,0 +1,10 @@
+Host:yingrongda.com
+ContactPerson:
+Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd
+Email:DomainAbuse@service.aliyun.com
+Phone:95187
+CreationDate:2010-01-26 10:53:54
+ExpirationDate:2029-01-26 10:53:54
+WhoisServer:grs-whois.hichina.com
+DnsServer:DNS27.HICHINA.COM, DNS28.HICHINA.COM
+DomainStatus: ok https://icann.org/epp#ok

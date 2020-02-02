@@ -1,0 +1,13 @@
+certifi==2019.11.28
+cffi==1.13.2
+chardet==3.0.4
+dnslib==0.9.12
+dnspython==1.16.0
+gevent==1.4.0
+greenlet==0.4.15
+idna==2.8
+IPy==1.0
+pycparser==2.19
+python-nmap==0.6.1
+requests==2.22.0
+urllib3==1.25.8

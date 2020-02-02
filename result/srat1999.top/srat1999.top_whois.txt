@@ -1,0 +1,10 @@
+Host:srat1999.top
+ContactPerson:
+Registrar: Alibaba Cloud Computing Ltd. d/b/a HiChina (www.net.cn)
+Email:DomainAbuse@service.aliyun.com
+Phone:95187
+CreationDate:2019-12-31 10:33:06
+ExpirationDate:2020-12-31 10:33:06
+WhoisServer:whois.hichina.com/
+DnsServer:dns29.hichina.com, dns30.hichina.com
+DomainStatus: ok https://icann.org/epp#OK

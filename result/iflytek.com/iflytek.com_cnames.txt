@@ -1,0 +1,17 @@
+tech.iflytek.com    0d51bf7c1e2668a3f32c0f915dd3d58a.iflysec.com.
+jira.iflytek.com    05003b6b4b16a4fbf554952265a073c1.iflysec.com.
+log.iflytek.com    667ffed89a65d58dc03d06c9d4feae9d.iflysec.com.
+mp.iflytek.com    ec0734669eae43e6021e81c6e7a34868.iflysec.com.
+campus.iflytek.com    iflytek.cheng95.com.
+a1.iflytek.com    a5d2d128fe8d3e06111aebeb3a9c6ef9.iflysec.com.
+www.iflytek.com    2d97971851d19186d9219db2b3ba6c9e.iflysec.com.
+app.iflytek.com    app.lvs.iflytek.com.
+cdn.iflytek.com    cdn.zxj.iflytek.com.wsdvs.com.
+translate.iflytek.com    3b89d9aeea2f3acd8ddcfa8b58d9e18d.iflysec.com.
+console.iflytek.com    98fbfb69264b32f05c3231ef6aa9447c.iflysec.com.
+app2.iflytek.com    app2.lvs.iflytek.com.
+rec.iflytek.com    rec.iflytek.com.wsssec.com.
+personal.iflytek.com    personal.iflytek.com.wswebpic.com.
+intern.iflytek.com    iflytek.cheng95.com.
+yd.iflytek.com    f673137aec438c8df56e918382e74576.iflysec.com.
+xj.iflytek.com    154249bb39c79c0f835ed012518f10c4.iflysec.com.

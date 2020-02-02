@@ -1,0 +1,10 @@
+Host:iflytek.com
+ContactPerson:
+Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd
+Email:DomainAbuse@service.aliyun.com
+Phone:95187
+CreationDate:2000-04-24 21:08:45
+ExpirationDate:2020-04-24 21:08:45
+WhoisServer:grs-whois.hichina.com
+DnsServer:VIP3.ALIDNS.COM, VIP4.ALIDNS.COM
+DomainStatus: ok https://icann.org/epp#ok
