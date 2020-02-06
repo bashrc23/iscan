@@ -15,12 +15,14 @@ if __name__ == "__main__":
     parser.add_argument("-d","--domain",help="target domain",required=True)
     parser.add_argument("-fc","--force_check_port",help="force check subdomain port",choices=['y','n'])
     parser.add_argument("-p","--plugins",help="choose the plugins you want to use",default="domainbrute")
+    parser.add_argument("-fd","--force_domainbrute",help="force brute subdomain",choices=['y','n'])
     args = parser.parse_args()
 
 
     domain = args.domain
     plugins = args.plugins
     force_check_port = True if args.force_check_port == 'y' else False
+    force_brute_subdomain = True if args.force_domainbrute == 'y' else False
 
     processes = []
     if "whatweb" in plugins:
@@ -33,7 +35,7 @@ if __name__ == "__main__":
         domainbruter = DomainBruter(domain)
 
 
-    if test_alive(domain):
+    if force_brute_subdomain or test_alive(domain):
         domainbruter.run()
 
         for p in processes:

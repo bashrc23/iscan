@@ -9,8 +9,11 @@ import sys
 import time
 import random
 import os
+import configparser
 this_rootpath = os.path.dirname(__file__).replace("plugins","")
 
+conf = configparser.ConfigParser()
+conf.read(this_rootpath+"/config/plugins.conf")
 
 class DomainBruter:
     def __init__(self,domain):
@@ -19,7 +22,7 @@ class DomainBruter:
         self.domain_queue = Queue()
         self.generate_dict()
         self.resolver = resolver.Resolver()
-        self.pool = pool.Pool(1000)
+        self.pool = pool.Pool(int(conf.get("domainbrute","level")))
         self.cname_record = dict()
 
 
@@ -156,7 +159,9 @@ class DomainBruter:
         self.save_result()
 
 
-# if __name__ == '__main__':
+
+if __name__ == '__main__':
+    print(conf.get("domainbrute","level"))
 #     burter = DomainBruter("jieqi.com")
 #     # burter.query("global.joyoung.com")
 #     burter.run()

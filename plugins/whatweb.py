@@ -2,11 +2,15 @@ import requests
 import zlib
 import json
 import os
+import configparser
+
+
+rootpath = os.path.dirname(__file__).replace("plugins","")
+conf = configparser.ConfigParser()
+conf.read(rootpath+"/config/plugins.conf")
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-
-rootpath = os.path.dirname(__file__).replace("plugins","")
 
 def whatweb(domain):
     result = open(rootpath+"/result/"+domain+f"/{domain}_whatweb.txt",'w',encoding="GBK")
@@ -21,7 +25,7 @@ def whatweb(domain):
     whatweb_dict = whatweb_dict.encode()
     whatweb_dict = zlib.compress(whatweb_dict)
     data = {"info":whatweb_dict}
-    res = requests.post("http://whatweb.bugscaner.com/api.go",files=data).text
+    res = requests.post(conf.get("whatweb","url"),files=data).text
     info_dict = json.loads(res)
     for keys in info_dict:
         print(f"[+ whatweb +] {keys}:{info_dict[keys]}")

@@ -1,4 +1,4 @@
 autodiscover.nuist.edu.cn    autodiscover.partner.outlook.cn.
-sip.nuist.edu.cn    sipdir.online.partner.lync.cn.ccgslb.com.cn.
 lyncdiscover.nuist.edu.cn    webdir.online.partner.lync.cn.ccgslb.com.cn.
+sip.nuist.edu.cn    sipdir.online.partner.lync.cn.ccgslb.com.cn.
 msoid.nuist.edu.cn    www.tm.mc.prd.aadg.trafficmanager.net.

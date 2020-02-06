@@ -4,10 +4,13 @@ monkey.patch_all()
 import nmap
 import os
 import sys
+import configparser
 import json
 from queue import Queue
 
 rootpath = os.path.dirname(__file__).replace("plugins","")
+conf = configparser.ConfigParser()
+conf.read(rootpath+"/config/plugins.conf")
 
 
 def test_alive(domain):  # 检测端口数量判断主机存活
@@ -15,6 +18,7 @@ def test_alive(domain):  # 检测端口数量判断主机存活
     scanner = nmap.PortScanner()
     tester = scanner.scan(hosts=domain, arguments="-F -sS -T5 -Pn")
     scan = tester['scan']
+
     ip = None
     for keys in scan:
         ip = keys
@@ -45,10 +49,10 @@ class Port_scanner:
         sys.stdout.flush()
         portscan = nmap.PortScanner()
         try:
-            p = portscan.scan(hosts=ip,arguments="-T5 -F -sS")
+            p = portscan.scan(hosts=ip,arguments=conf.get("nmap","argv"),ports=conf.get("nmap","ports"))
             self.result.append(portscan)
         except Exception as e:
-            print(f"[+ portscanner +] {e}")
+            print(f"[- portscanner -] {e}")
 
 
 
@@ -72,8 +76,11 @@ class Port_scanner:
             print(f"[- portscanner -] {e}")
 
 # if __name__ == '__main__':
-#
-#     check_sub_domain_ports("srat1999.top")
+#     p = nmap.PortScanner()
+#     s = p.scan(hosts="my.srat1999.top",arguments=conf.get("nmap","argv"))
+#     print(s)
+    # p.check_sub_domain_ports()
+    # print(conf.get("nmap","argv"))
 
 
 

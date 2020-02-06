@@ -1,11 +1,14 @@
 host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
-124.156.123.74;;;tcp;80;http;open;;;syn-ack;;3;
-124.156.123.74;;;tcp;443;https;open;;;syn-ack;;3;
-
-host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
 129.211.73.107;;;tcp;21;ftp;open;;;syn-ack;;3;
 129.211.73.107;;;tcp;80;http;open;;;syn-ack;;3;
 129.211.73.107;;;tcp;111;rpcbind;open;;;syn-ack;;3;
 129.211.73.107;;;tcp;443;https;open;;;syn-ack;;3;
 129.211.73.107;;;tcp;445;microsoft-ds;filtered;;;no-response;;3;
+129.211.73.107;;;tcp;3306;mysql;open;;;syn-ack;;3;
+129.211.73.107;;;tcp;5060;sip;filtered;;;no-response;;3;
+129.211.73.107;;;tcp;32768;filenet-tms;open;;;syn-ack;;3;
+
+host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
+124.156.123.74;;;tcp;80;http;open;;;syn-ack;;3;
+124.156.123.74;;;tcp;443;https;open;;;syn-ack;;3;
 
